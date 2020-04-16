@@ -1,0 +1,26 @@
+FROM ubuntu:18.04
+
+RUN apt-get update
+RUN apt install -y apt-utils
+RUN apt install wget -y
+
+RUN wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_9.4.1_all.deb
+RUN dpkg -i phoronix-test-suite_9.4.1_all.deb || true
+RUN apt-get -f install -y
+RUN dpkg -i phoronix-test-suite_9.4.1_all.deb
+
+RUN apt-get install -y libzip-dev
+RUN apt-get install php7.2-zip
+
+RUN phoronix-test-suite install pts/sqlite-2.1.0 \
+                                pts/sqlite-speedtest \
+                                pts/redis \
+                                pts/pgbench \
+                                pts/mysqlslap \
+                                pts/apache \
+                                pts/nginx \
+                                pts/blogbench \
+                                pts/ebizzy \
+                                pts/pybench \
+                                pts/openssl \
+                                pts/phpbench
