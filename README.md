@@ -3,6 +3,10 @@
 This repository contains different Dockerfiles with [Phoronix Test Suite](https://www.phoronix-test-suite.com/) and a set of [benchmarks](https://openbenchmarking.org/) already installed.
 
 ### Cloud
+```
+phoronix-test-suite run cloud
+```
+
 #### Database
 [pts/sqlite-2.1.0](https://openbenchmarking.org/test/pts/sqlite-2.1.0)
 
