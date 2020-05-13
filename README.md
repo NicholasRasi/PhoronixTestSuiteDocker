@@ -8,16 +8,37 @@ phoronix-test-suite run cloud
 ```
 
 #### Database
-[pts/sqlite-2.1.0](https://openbenchmarking.org/test/pts/sqlite-2.1.0)
-
-[pts/redis](https://openbenchmarking.org/test/pts/redis)
+- [pts/sqlite](https://openbenchmarking.org/test/pts/sqlite)
+- [pts/redis](https://openbenchmarking.org/test/pts/redis)
+- [pts/rocksdb](https://openbenchmarking.org/test/pts/cassandra)
 
 #### Server
-[pts/apache](https://openbenchmarking.org/test/pts/apache)
+- [pts/apache](https://openbenchmarking.org/test/pts/apache)
+- [pts/nginx](https://openbenchmarking.org/test/pts/nginx)
+- [pts/blogbench](https://openbenchmarking.org/test/pts/blogbench)
 
-[pts/nginx](https://openbenchmarking.org/test/pts/nginx)
+### Hardware
+```
+phoronix-test-suite run hardware
+```
 
-### Other
-[pts/pybench](https://openbenchmarking.org/test/pts/pybench)
+### System Test
+- [pts/sysbench](https://openbenchmarking.org/test/pts/sysbench)
+- [pts/osbench](https://openbenchmarking.org/test/pts/osbench)
+- [pts/pybench](https://openbenchmarking.org/test/pts/pybench)
 
-[pts/openssl](https://openbenchmarking.org/test/pts/openssl)
+### Disk
+- [pts/tiobench](https://openbenchmarking.org/test/pts/tiobench)
+- [pts/fio](https://openbenchmarking.org/test/pts/fio)
+
+### Memory
+- [pts/ramspeed](https://openbenchmarking.org/test/pts/ramspeed)
+
+### Processor
+- [pts/compress-gzip](https://openbenchmarking.org/test/pts/compress-gzip)
+- [pts/compress-7zip](https://openbenchmarking.org/test/pts/compress-7zip)
+- [pts/openssl](https://openbenchmarking.org/test/pts/openssl)
+
+### Network
+- [pts/network-loopback](https://openbenchmarking.org/test/pts/network-loopback)
+- [pts/sockperf](https://openbenchmarking.org/test/pts/sockperf)

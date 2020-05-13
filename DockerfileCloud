@@ -1,20 +1,23 @@
-FROM ubuntu:18.04
+FROM ubuntu:19.10
 
-RUN apt-get update
-RUN apt install apt-utils wget nano -y
+RUN apt-get update && \
+	apt install -y \
+	apt-utils \
+	libzip-dev \
+	nano \
+	php7.3-zip \
+	wget
 
-RUN wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_9.4.1_all.deb
-RUN dpkg -i phoronix-test-suite_9.4.1_all.deb || true
-RUN apt-get -f install -y
-RUN dpkg -i phoronix-test-suite_9.4.1_all.deb
+RUN wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_9.6.0_all.deb && \
+	dpkg -i phoronix-test-suite_9.6.0_all.deb || true && \
+	apt-get -f install -y && \
+	dpkg -i phoronix-test-suite_9.6.0_all.deb
 
-RUN apt-get install libzip-dev php7.2-zip -y 
-
-RUN phoronix-test-suite install pts/sqlite-2.1.0 \
+RUN phoronix-test-suite install pts/sqlite \
                                 pts/redis \
+                                pts/cassandra \
                                 pts/apache \
                                 pts/nginx \
-                                pts/pybench \
-                                pts/openssl
+                                pts/blogbench
 
-COPY suite-definition-cloud.xml /var/lib/phoronix-test-suite/test-suites/local/cloud/suite-definition.xml
+COPY cloud/suite-definition.xml /var/lib/phoronix-test-suite/test-suites/local/cloud/suite-definition.xml
