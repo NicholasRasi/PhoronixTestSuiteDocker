@@ -23,22 +23,19 @@ phoronix-test-suite run hardware
 ```
 
 ### System Test
-- [pts/sysbench](https://openbenchmarking.org/test/pts/sysbench)
 - [pts/osbench](https://openbenchmarking.org/test/pts/osbench)
 - [pts/pybench](https://openbenchmarking.org/test/pts/pybench)
 
-### Disk
+#### Disk
 - [pts/tiobench](https://openbenchmarking.org/test/pts/tiobench)
-- [pts/fio](https://openbenchmarking.org/test/pts/fio)
 
-### Memory
+#### Memory
 - [pts/ramspeed](https://openbenchmarking.org/test/pts/ramspeed)
 
-### Processor
-- [pts/compress-gzip](https://openbenchmarking.org/test/pts/compress-gzip)
+#### Processor
 - [pts/compress-7zip](https://openbenchmarking.org/test/pts/compress-7zip)
 - [pts/openssl](https://openbenchmarking.org/test/pts/openssl)
 
-### Network
+#### Network
 - [pts/network-loopback](https://openbenchmarking.org/test/pts/network-loopback)
 - [pts/sockperf](https://openbenchmarking.org/test/pts/sockperf)

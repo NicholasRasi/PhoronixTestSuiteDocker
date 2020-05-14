@@ -1,7 +1,9 @@
 FROM ubuntu:19.10
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update && \
-	apt install -y \
+    apt install -y \
 	apt-utils \
 	libzip-dev \
 	nano \
@@ -9,9 +11,7 @@ RUN apt-get update && \
 	wget
 
 RUN wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_9.6.0_all.deb && \
-	dpkg -i phoronix-test-suite_9.6.0_all.deb || true && \
-	apt-get -f install -y && \
-	dpkg -i phoronix-test-suite_9.6.0_all.deb
+    apt install -y ./phoronix-test-suite_9.6.0_all.deb
 
 RUN phoronix-test-suite install pts/sqlite \
                                 pts/redis \
