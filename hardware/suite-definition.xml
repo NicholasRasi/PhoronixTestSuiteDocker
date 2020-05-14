@@ -86,10 +86,4 @@
     <Description></Description>
     <OverrideTestOptions></OverrideTestOptions>
   </Execute>
-  <Execute>
-    <Test>pts/network-loopback-1.0.3</Test>
-    <Arguments></Arguments>
-    <Description></Description>
-    <OverrideTestOptions></OverrideTestOptions>
-  </Execute>
 </PhoronixTestSuite>

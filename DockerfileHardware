@@ -19,7 +19,6 @@ RUN phoronix-test-suite install pts/osbench \
                                 pts/ramspeed \
                                 pts/compress-7zip \
                                 pts/openssl \
-                                pts/network-loopback \
                                 pts/sockperf
 
 COPY hardware/suite-definition.xml /var/lib/phoronix-test-suite/test-suites/local/hardware/suite-definition.xml

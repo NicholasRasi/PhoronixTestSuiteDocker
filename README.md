@@ -37,5 +37,4 @@ phoronix-test-suite run hardware
 - [pts/openssl](https://openbenchmarking.org/test/pts/openssl)
 
 #### Network
-- [pts/network-loopback](https://openbenchmarking.org/test/pts/network-loopback)
 - [pts/sockperf](https://openbenchmarking.org/test/pts/sockperf)
