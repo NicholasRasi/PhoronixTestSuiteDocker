@@ -10,7 +10,7 @@ phoronix-test-suite run cloud
 #### Database
 - [pts/sqlite](https://openbenchmarking.org/test/pts/sqlite)
 - [pts/redis](https://openbenchmarking.org/test/pts/redis)
-- [pts/rocksdb](https://openbenchmarking.org/test/pts/cassandra)
+- [pts/cassandra](https://openbenchmarking.org/test/pts/cassandra)
 
 #### Server
 - [pts/apache](https://openbenchmarking.org/test/pts/apache)

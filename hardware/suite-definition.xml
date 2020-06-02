@@ -86,4 +86,22 @@
     <Description></Description>
     <OverrideTestOptions></OverrideTestOptions>
   </Execute>
+  <Execute>
+    <Test>pts/sockperf-1.0.0</Test>
+    <Arguments>under-load</Arguments>
+    <Description>Test: Latency Under Load</Description>
+    <OverrideTestOptions></OverrideTestOptions>
+  </Execute>
+  <Execute>
+    <Test>pts/sockperf-1.0.0</Test>
+    <Arguments>ping-pong</Arguments>
+    <Description>Test: Latency Ping Pong</Description>
+    <OverrideTestOptions></OverrideTestOptions>
+  </Execute>
+  <Execute>
+    <Test>pts/sockperf-1.0.0</Test>
+    <Arguments>throughput</Arguments>
+    <Description>Test: Throughput</Description>
+    <OverrideTestOptions></OverrideTestOptions>
+  </Execute>
 </PhoronixTestSuite>
