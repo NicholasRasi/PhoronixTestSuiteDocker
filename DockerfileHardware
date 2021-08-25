@@ -1,4 +1,4 @@
-FROM ubuntu:19.10
+FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-utils \
     libzip-dev \
     nano \
-    php7.3-zip \
+    php7.4-zip \
     wget
 
 RUN wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_9.6.0_all.deb && \
