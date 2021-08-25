@@ -10,8 +10,8 @@ RUN apt-get update && \
     php7.4-zip \
     wget
 
-RUN wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_9.6.0_all.deb && \
-    apt install -y ./phoronix-test-suite_9.6.0_all.deb
+RUN wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_10.4.0_all.deb && \
+    apt install -y ./phoronix-test-suite_10.4.0_all.deb
 
 RUN phoronix-test-suite install pts/osbench \
                                 pts/pybench \
